@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+   <head>
+
+      <meta charset="UTF-8">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Copy&Pay Checkout</title>
+
+      <link rel="stylesheet" href="css/main.css">
+
+   </head>
+
+   <body>
+
+      <header>
+
+         <a href="http://localhost/copyandpay-oppwa/" rel="home">Copy&Pay Checkout</a>
+
+      </header>
+
+      <main>
+
+         <h1>Buy Our Products!</h1>
+
+         <p> This demo is in test mode. That means you can check out using any of the <a href="https://docs.oppwa.com/reference/parameters#test-accounts">test card numbers</a>. </p>
+
+         <section class="products">
+
+            <div class="product">
+
+               <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&amp;fit=crop&amp;w=600&amp;h=600&amp;q=80" alt="This Pretty Plant">
+
+               <h2>This Pretty Plant</h2>
+
+               <p class="description">Look at this pretty plant. Photo by Galina N on Unsplash.</p>
+
+               <p class="price">$10.00</p>
+
+               <form action="checkout.php" method="post">
+
+                  <input type="hidden" name="price" value="10.00">
+
+                  <button onclick="openPopup()" type="submit">Buy Now</button>
+
+               </form>
+
+            </div>
+
+            <div class="product">
+
+               <img src="https://images.unsplash.com/photo-1454329001438-1752daa90420?auto=format&amp;fit=crop&amp;w=600&amp;h=600&amp;q=80" alt="Adventure Mug">
+
+               <h2>Adventure Mug</h2>
+
+               <p class="description">We’re going on an adventure! Photo by Annie Spratt on Unsplash.</p>
+
+               <p class="price">$15.00</p>
+
+               <form action="checkout.php" method="post">
+
+                  <input type="hidden" name="price" value="15.00">
+
+                  <button onclick="openPopup()" type="submit">Buy Now </button>
+
+               </form>
+
+            </div>
+
+         </section>
+
+
+
+</main>
+
+      <footer>
+
+         <p> Payment Orchestration Platform (POP) </p>
+
+      </footer>
+
+   </body>
+
+</html>
