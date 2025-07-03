@@ -26,14 +26,14 @@
        $url =
            "https://eu-test.oppwa.com/v1/checkouts/" . $checkoutId . "/payment";
 
-       $url .= "?entityId=8a8294174b7ecb28014b9699220015ca";
+       $url .= "?entityId=8ac7a4c79394bdc801939736f17e063d";
 
        $ch = curl_init();
 
        curl_setopt($ch, CURLOPT_URL, $url);
 
        curl_setopt($ch, CURLOPT_HTTPHEADER, [
-           "Authorization:Bearer OGE4Mjk0MTc0YjdlY2IyODAxNGI5Njk5MjIwMDE1Y2N8c3k2S0pzVDg=",
+           "Authorization:Bearer OGFjN2E0Yzc5Mzk0YmRjODAxOTM5NzM2ZjFhNzA2NDF8enlac1lYckc4QXk6bjYzI1NHNng=",
        ]);
 
        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
